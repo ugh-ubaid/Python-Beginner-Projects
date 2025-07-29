@@ -10,7 +10,7 @@ def alarm_clock():
     try:
         alarm_hour, alarm_minute, alarm_second = map(int, alarm_time.split(":"))
     except ValueError:
-        print("❌ Invalid time format. Please use HH:MM:SS (e.g., 07:30:00).")
+        print(" Invalid time format. Please use HH:MM:SS (e.g., 07:30:00).")
         return
 
     print(f" Alarm is set for {alarm_time}. Monitoring time... (Press Ctrl+C to stop)\n")
